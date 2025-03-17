@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+export default {
+  async fetch(request) {
+    // Function to generate random numbers within a range
+    function getRandomNumber(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    // Function to generate the HTML content
+    function generateHTML() {
+      return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -45,7 +54,6 @@
     </style>
 </head>
 <body>
-
     <div class="container">
         <h1>🚀 Bot Documentation ✅</h1>
         <p><strong>Bot Username:</strong> <span class="highlight">@trade_with_me_bot ✅ (Running & Active)</span><br>Please save this link for your records. If we ever need to update or transition to a new bot, your account statistics and progress will be preserved and carried over seamlessly and this is where new bot username will be provided</p>
@@ -64,7 +72,6 @@
                 <li><strong>Level B (Indirect Referrals)</strong> – Earn <span class="highlight">1%</span> of their daily earnings.</li>
                 <li><strong>Level C (Extended Network)</strong> – Earn <span class="highlight">0.5%</span> of their daily earnings.</li>
                 <li>❌ <strong>Referee's Balance</strong> – If your referee's account balance decreases from $50 they will be removed from your list until they deposit again.</li>
-            </ul>
             </ul>
             <p>Your referral network generates passive income while they trade!</p>
         </div>
@@ -90,7 +97,7 @@
                 <li><strong>Referrer (You)</strong> gets <span class="highlight">10%</span> of their first deposit.</li>
                 <li><strong>Depositor</strong> gets <span class="highlight">5%</span> as a welcome bonus.</li>
             </ul>
-          <p><em>Example:</em> If your referral deposits more than <strong>$50</strong>, you receive <strong>%10</strong>, and they receive <strong>%5</strong> in bonuses!. <br><strong>NOTE</strong> This is one time only.</p>
+            <p><em>Example:</em> If your referral deposits more than <strong>$50</strong>, you receive <strong>10%</strong>, and they receive <strong>5%</strong> in bonuses!. <br><strong>NOTE</strong> This is one time only.</p>
         </div>
 
         <div class="section">
@@ -101,7 +108,7 @@
                 <li>✅ <strong>Maximum Leverage</strong> – Our expert system applies leverage to hit targets faster.</li>
                 <li>✅ <strong>Profitable Strategy</strong> – We execute only the best trade setups with strict risk management.</li>
                 <li>✅ <strong>Expanding Asset Selection</strong> – Currently, we trade Bitcoin (BTC), but we will soon add altcoins to further increase profits.</li>
-                
+            </ul>
         </div>
 
         <div class="section">
@@ -113,66 +120,66 @@
         </div>
 
         <div class="section">
-    <h2>🏆 Leveling Up – Account Requirements</h2>
-    <table>
-        <tr>
-            <th>Level</th>
-            <th>Min. Balance (USDT)</th>
-            <th>Referrals A</th>
-            <th>Referrals B/C</th>
-            <th>Team Members</th>
-            <th>Min. Deposit (USDT)</th>
-        </tr>
-        <tr>
-            <td>0</td>
-            <td>No Requirement</td>
-            <td>No Requirement</td>
-            <td>No Requirement</td>
-            <td>No Requirement</td>
-            <td>No Requirement</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>$50.00</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>$0.00</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>$100.00</td>
-            <td>3</td>
-            <td>5</td>
-            <td>8</td>
-            <td>$100.00</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>$600.00</td>
-            <td>6</td>
-            <td>10</td>
-            <td>26</td>
-            <td>$600.00</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>$1,500.00</td>
-            <td>20</td>
-            <td>30</td>
-            <td>50</td>
-            <td>$1,500.00</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>$5,000.00</td>
-            <td>50</td>
-            <td>100</td>
-            <td>300</td>
-            <td>$5,000.00</td>
-        </tr>
-    </table>
-</div>
+            <h2>🏆 Leveling Up – Account Requirements</h2>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Min. Balance (USDT)</th>
+                    <th>Referrals A</th>
+                    <th>Referrals B/C</th>
+                    <th>Team Members</th>
+                    <th>Min. Deposit (USDT)</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>No Requirement</td>
+                    <td>No Requirement</td>
+                    <td>No Requirement</td>
+                    <td>No Requirement</td>
+                    <td>No Requirement</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>$50.00</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>$0.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>$100.00</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>$100.00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>$600.00</td>
+                    <td>6</td>
+                    <td>10</td>
+                    <td>26</td>
+                    <td>$600.00</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>$1,500.00</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>50</td>
+                    <td>$1,500.00</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>$5,000.00</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>300</td>
+                    <td>$5,000.00</td>
+                </tr>
+            </table>
+        </div>
 
         <div class="section">
             <h2>🚀 Why Choose Us?</h2>
@@ -233,4 +240,12 @@
         setTimeout(addMonthlyFunds, 30000); // Change to 2592000000 for 30 days
     </script>
 </body>
-</html>
+</html>`;
+    }
+
+    // Serve the generated HTML as a response
+    return new Response(generateHTML(), {
+      headers: { "Content-Type": "text/html" },
+    });
+  },
+};
