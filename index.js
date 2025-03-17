@@ -159,7 +159,7 @@ export default {
                     <td>$600.00</td>
                     <td>6</td>
                     <td>10</td>
-                    <td>26</td>
+                    <td>15</td>
                     <td>$600.00</td>
                 </tr>
                 <tr>
