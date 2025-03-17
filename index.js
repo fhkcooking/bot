@@ -55,7 +55,7 @@ export default {
 </head>
 <body>
     <div class="container">
-        <h1>🚀 Bot Documentation ✅</h1>
+        <h1>🚀 Trade Beast Documentation ✅</h1>
         <p><strong>Bot Username:</strong> <span class="highlight">@trade_with_me_bot ✅ (Running & Active)</span><br>Please save this link for your records. If we ever need to update or transition to a new bot, your account statistics and progress will be preserved and carried over seamlessly and this is where new bot username will be provided</p>
 
         <div class="section">
